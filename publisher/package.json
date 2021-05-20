@@ -4,6 +4,13 @@
   "main": "index.ts",
   "author": "Madu Ikechukwu",
   "license": "MIT",
+  "scripts": {
+    "start": "node ./dist",
+    "start:dev": "nodemon ./dist",
+    "compile": "tsc",
+    "watch": "tsc --watch -p ./tsconfig.json",
+    "test": "jest --runInBand --detectOpenHandles --forceExit"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^9.0.2",
